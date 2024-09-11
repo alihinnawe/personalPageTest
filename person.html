@@ -1,0 +1,179 @@
+<!doctype html lang="de">
+<html>
+	<head>
+		<meta name="dcterms.rightsHolder" content="Ali Hinnawe" />
+		<meta name="dcterms.rights" content="all rights reserved" />
+		<meta name="dcterms.dateCopyrighted" content="2024" />
+		<meta charset="utf-8" />
+
+		<title>Ali Personal App</title>
+		<link rel="icon" type="image/jpeg" href="image/person.jpg" />
+		<link rel="stylesheet" href="css/basics.css" />
+		<script type="module" src="script/script.js"></script>
+		
+		<template class="table-template">
+			<tr>
+				<td class="vorName"></td>
+				<td class="nachName"></td>
+			</tr>
+		</template>
+		
+	</head>
+
+	<body>
+		<main>
+		
+		<div class="logo">
+			<nav>
+			</nav>
+			<img class="img-logo" src="image/figd-logo.png" alt="FiGD Logo"/>
+		</div>
+		<article class="left hidden"></article>
+			<article class="center">
+				<section class="person">
+					<div class="avatar">
+						<label>Avatar</label>
+						<img src="image/ali.jpg" alt="personal image"/>
+					</div>				
+					<div class="credential">
+						<div class="email">
+							<label>Email</label>
+							<input type="email" value="ali.hinnawe@gmx.de"/>
+						</div>
+						<div class="password">
+							<label>Passwort</label>
+							<input type="password"/>
+						</div>
+						
+						<div class="LinkedIn">
+							<label>LinkedIn URL</label>
+							<input type="url"/>
+						</div>
+
+						<div class="gender">
+							<label>Geschlecht</label>
+							<select>
+								<option value="FEMALE">Weiblich</option>
+								<option value="MALE" selected>Männlich</option>
+							</select>
+						</div>
+						<div class="group" >
+							<label>Gruppe</label>
+							<select disabled>
+								<option value="USER" selected>Benutzer</option>
+								<option value="ADMIN" >Administrator</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="name">
+						<div class="title">
+							<label for="title">Titel</label>
+							<select id="title" name="title">
+								<option value="MR">Herr</option>
+								<option value="MRS">Frau</option>
+								<option value="MS">Fräulein</option>
+								<option value="DR">Dr.</option>
+							</select>
+						</div>
+
+						<div class="first-name">
+							<label for="firstName">Vorname</label>
+							<input type="text" id="firstName" name="firstName" />
+						</div>
+
+						<div class="middle-name">
+							<label for="middleName">Zweiter Vorname</label>
+							<input type="text" id="middleName" name="middleName" />
+						</div>
+
+						<div class="family-name">
+							<label for="familyName">Nachname</label>
+							<input type="text" id="familyName" name="familyName" />
+						</div>
+					</div>
+
+					<div class="property">
+						<div class="height">
+							<label for="height">Höhe (cm)</label>
+							<input type="text" id="height" name="height" />
+						</div>
+
+						<div class="width">
+							<label for="width">Breite (cm)</label>
+							<input type="text" id="width" name="width" />
+						</div>
+
+						<div class="eye-color">
+							<label for="eyeColor">Augenfarbe</label>
+							<input type="color" id="eyeColor" name="eyeColor" />
+						</div>
+
+						<div class="hair-color">
+							<label for="hairColor">Haarfarbe</label>
+							<input type="color" id="hairColor" name="hairColor" />
+						</div>
+					</div>
+
+					<div class="address">
+						<div class="postal-code">
+							<label for="postalCode">PLZ</label>
+							<input type="text" id="postalCode" name="postalCode" />
+						</div>
+
+						<div class="street">
+							<label for="street">Straße</label>
+							<input type="text" id="street" name="street" />
+						</div>
+
+						<div class="city">
+							<label for="city">Stadt</label>
+							<input type="text" id="city" name="city" />
+						</div>
+
+						<div class="country">
+							<label for="country">Land</label>
+							<input type="text" id="country" name="country" />
+						</div>
+					</div>
+
+					<div class="life">
+						<div class="resume">
+							<label for="resume">Lebenslauf</label>
+							<textarea id="resume" name="resume" rows="4" cols="50"></textarea>
+						</div>
+
+						<div class="hobbies">
+							<label for="hobbies">Hobbys</label>
+							<textarea id="hobbies" name="hobbies" rows="4" cols="50"></textarea>
+						</div>
+					</div>
+				</section>
+				<div class="table-personal">
+					<table>
+					<thead>
+						<tr>
+							<th>Vorname</th>
+							<th>Nachname</th>
+						</tr>
+					</thead>
+					<tbody class="tableClass">
+						<tr>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+
+			</article>
+
+			<div><button type="submit">Submit friend</button></div>
+			
+
+			<article class="right hidden"></article>
+
+		</main>
+		<footer></footer>
+	</body>
+</html>

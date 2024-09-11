@@ -1,0 +1,113 @@
+:root {
+	--normal-font-family: sans-serif;
+	--lyrics-font-family: monospace;
+	--division-background-color: ivory;
+}
+
+body {
+  font-family: var(--normal-font-family);
+}
+
+.hidden {
+  display: none;
+}
+
+span, label {
+  display: inline-block;
+}
+
+
+article.center {
+	section.person > div {
+		padding: 1em;
+		margin-bottom: 1em;
+		background-color: var(--division-background-color);
+	}
+
+	section.person {
+		label {
+			width: 8em;
+			margin-right: 0.5em;
+		}
+
+		div.avatar {
+			img {
+				width: 8em;
+				height: 8em;
+				vertical-align: middle;
+			}
+		}
+
+		div.credential {
+			.email, .password, .LinkedIn, .gender, .group {
+				margin-bottom: 1em;
+			}
+		}
+
+		div.name,
+		div.property,
+		div.address,
+		div.life {
+			div {
+				margin-bottom: 1em;
+			}
+		}
+	}
+}
+
+img.img-logo {
+	width: 8rem;	
+}
+
+nav {
+			width: 100%;
+		}
+		
+.logo{
+	display:flex;
+	background-color:black;
+}	
+
+
+.table-personal {
+				height: 5rem;
+				overflow-x: auto;
+				overflow-y: scroll;
+				background-color: var(--division-background-color);
+				margin-bottom: 1em;
+			
+
+				th {
+					top: 0px;
+					border-bottom-style: solid;
+					background-color: var(--corporate-light-red);
+				}
+
+				th,td {
+					padding: 0px 2px;
+				}
+
+				th:not(:first-of-type),td:not(:first-of-type) {
+					border-left-style: solid;
+				}
+}
+
+.table-personal>table>thead>tr>th{
+	position: sticky;
+	background-color: rgb(12, 231, 231);
+	
+
+}
+
+.highlight{
+
+	color:rgb(9, 247, 168);
+}
+
+body > main > div {
+	padding: 1em;
+		margin-bottom: 1em;
+		background-color: var(--division-background-color);
+}
+
+	
